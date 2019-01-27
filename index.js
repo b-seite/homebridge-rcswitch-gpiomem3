@@ -1,11 +1,11 @@
-var rcswitch = require('rcswitch-gpiomem2');
+var rcswitch = require('rcswitch-gpiomem3');
 
 var Service, Characteristic;
 
 module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
-    homebridge.registerAccessory("homebridge-rcswitch-gpiomem2", "RCSwitch", RadioSwitch);
+    homebridge.registerAccessory("homebridge-rcswitch-gpiomem3", "RCSwitch", RadioSwitch);
 }
 
 function RadioSwitch(log, config) {
@@ -41,9 +41,9 @@ function RadioSwitch(log, config) {
     var informationService = new Service.AccessoryInformation();
 
     informationService
-        .setCharacteristic(Characteristic.Name, "node-rcswitch-gpiomem2")
-        .setCharacteristic(Characteristic.Manufacturer, "fredericvl")
-        .setCharacteristic(Characteristic.Model, "v1.2.2")
+        .setCharacteristic(Characteristic.Name, "node-rcswitch-gpiomem3")
+        .setCharacteristic(Characteristic.Manufacturer, "jdrucey")
+        .setCharacteristic(Characteristic.Model, "v1.3.0")
         .setCharacteristic(Characteristic.SerialNumber, "0000000001");
 
     var state = false;
