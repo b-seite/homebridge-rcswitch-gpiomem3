@@ -23,7 +23,7 @@
   "author": "Jamie Druce",
   "contributors": ["Nathan Henrie <http://n8henrie.com>"],
   "engines": {
-    "node": ">=0.10",
+    "node": ">=4.0.0",
     "homebridge": ">=0.4.40"
   },
   "bugs": {
@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/b-seite/homebridge-rcswitch-gpiomem3",
   "dependencies": {
-      "b-seite/rcswitch-gpiomem3": "0.3.0"
+      "git://github.com/b-seite/rcswitch-gpiomem3"
   }
 }

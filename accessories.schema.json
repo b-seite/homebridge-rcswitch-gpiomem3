@@ -1,0 +1,45 @@
+"plugin_alias": "XiaomiRoborockVacuum",
+    "schemas": [{
+        "title": "Roborock Vacuum",
+        "type": "object",
+        "properties": {
+            "accessory": {
+                "title": "Accessory",
+                "type": "string",
+                "const": "XiaomiRoborockVacuum",
+                "readOnly": true
+            },
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "default": "Roborock Vacuum",
+                "required": true
+            },
+            "ip": {
+                "title": "IP Address",
+                "type": "string",
+                "required": true
+            },
+            "token": {
+                "title": "Access Token",
+                "type": "string",
+                "required": true,
+                "options": {
+                    "hidden": true
+                }
+            },
+            "pause": {
+                "title": "Show Pause Switch",
+                "type": "boolean",
+                "default": false,
+                "required": true
+            },
+            "dock": {
+                "title": "Show Dock Sensor",
+                "type": "boolean",
+                "default": true,
+                "required": true
+            }
+        }
+    }]
+}
