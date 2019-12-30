@@ -1,12 +1,12 @@
 {
-    "plugin_alias": "Shelly",
+    "plugin_alias": "RC-Switch",
     "schema": {
         "type": "object",
         "properties": {
             "platform": {
                 "title": "Platform",
                 "type": "string",
-                "const": "Shelly",
+                "const": "RC-Switch",
                 "readOnly": true
             },
             "username": {

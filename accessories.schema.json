@@ -1,24 +1,39 @@
-"plugin_alias": "XiaomiRoborockVacuum",
+"plugin_alias": "RCSwitch",
     "schemas": [{
-        "title": "Roborock Vacuum",
+        "title": "RC Switch",
         "type": "object",
         "properties": {
             "accessory": {
                 "title": "Accessory",
                 "type": "string",
-                "const": "XiaomiRoborockVacuum",
+                "const": "RCSwitch",
                 "readOnly": true
             },
             "name": {
                 "title": "Name",
                 "type": "string",
-                "default": "Roborock Vacuum",
+                "default": "Switch 1",
                 "required": true
             },
-            "ip": {
-                "title": "IP Address",
-                "type": "string",
+            "onCode": {
+                "title": "On Code",
+                "type": "int",
                 "required": true
+            },
+            "offCode": {
+                "title": "On Code",
+                "type": "int",
+                "required": true
+            },
+            "systemcode": {
+                "title": "RF System Code",
+                "type": "string",
+                "required": false
+            },
+            "unitcode": {
+                "title": "RF Unit Code",
+                "type": "int",
+                "required": false
             },
             "token": {
                 "title": "Access Token",
@@ -28,17 +43,23 @@
                     "hidden": true
                 }
             },
-            "pause": {
-                "title": "Show Pause Switch",
-                "type": "boolean",
-                "default": false,
+            "pin": {
+                "title": "BCM Pin",
+                "type": "int",
+                "default": 17,
                 "required": true
             },
-            "dock": {
-                "title": "Show Dock Sensor",
-                "type": "boolean",
-                "default": true,
-                "required": true
+            "pulseLength": {
+                "title": "bit lengt of RF code",
+                "type": "int",
+                "default": 24,
+                "required": false
+            },
+            "repeats": {
+                "title": "Number of repeat times",
+                "type": "int",
+                "default": 10,
+                "required": false
             }
         }
     }]
