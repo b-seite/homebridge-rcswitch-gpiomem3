@@ -58,10 +58,18 @@ function RadioSwitch(log, config) {
             rcswitch.setPulseLength(config.pulseLength || 190);
             rcswitch.setRepeatTransmit(config.repeats || 10);
             if (state) {
-                log("Switching on " + config.onCode + " (" + config.name + ") at protocol " + config.protocol);
+	            if ((config.systemcode != undefined) && (config.unitcode != undefined)) {
+                	log("Switching on " + config.systemcode + "." + config.unitcode + " (" + config.name + ") at protocol " + config.protocol);
+                } else {
+	                log("Switching on " + config.onCode + " (" + config.name + ") at protocol " + config.protocol);
+                }
                 switchOn();
             } else {
-                log("Switching off " + config.offCode + " (" + config.name + ") at protocol " + config.protocol);
+	            if ((config.systemcode != undefined) && (config.unitcode != undefined)) {
+                	log("Switching off " + config.systemcode + "." + config.unitcode + " (" + config.name + ") at protocol " + config.protocol);
+                } else {
+                	log("Switching off " + config.offCode + " (" + config.name + ") at protocol " + config.protocol);
+                }
                 switchOff();
             }
             callback();

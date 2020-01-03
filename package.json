@@ -1,7 +1,7 @@
 {
   "name": "homebridge-rcswitch-gpiomem3",
   "version": "1.3.1",
-  "description": "Siri / HomeKit control of RF switches by way of homebridge. Fork of https://github.com/FWeinb/homebridge-rcswitch",
+  "description": "Siri / HomeKit control of RF switches by way of homebridge.",
   "repository": {
       "type": "git",
       "url": "https://github.com/b-seite/homebridge-rcswitch-gpiomem3.git"
@@ -18,7 +18,8 @@
     "wiringPi",
     "siri",
     "homebridge",
-    "homebridge-plugin"
+    "homebridge-plugin",
+    "category-lighting"
   ],
   "author": "Jamie Druce",
   "contributors": ["Nathan Henrie <http://n8henrie.com>"],
