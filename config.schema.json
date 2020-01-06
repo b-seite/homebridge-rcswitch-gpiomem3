@@ -1,14 +1,10 @@
 {
     "plugin_alias": "RCSwitch",
+    "pluginType": "accessory",
+    "singular": false,
+    "footerDisplay": "If you need help or have issues visit: [issues](https://github.com/b-seite/homebridge-rcswitch4/issues)",
     "schema": {
-        "type": "object",
         "properties": {
-            "platform": {
-                "title": "Platform",
-                "type": "string",
-                "const": "RC-Switch",
-                "readOnly": true
-            },
             "pin": {
                 "title": "BCM Pin",
                 "description": "BCM pin connected to 433 mhz transmitter, defaults to 17.",

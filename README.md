@@ -1,16 +1,16 @@
-# homebridge-rcswitch-gpiomem3
+# homebridge-rcswitch4
 
-[![NPM version](https://badge.fury.io/js/homebridge-rcswitch-gpiomem3.svg)](http://badge.fury.io/js/homebridge-rcswitch-gpiomem3)
+[![NPM version](https://badge.fury.io/js/homebridge-rcswitch4.svg)](http://badge.fury.io/js/homebridge-rcswitch4)
 
 Control RF outlets with HomeKit / Siri using
-[rcswitch-gpiomem3](https://github.com/jdrucey/node-rcswitch-gpiomem3)
+[rcswitch4](https://github.com/jdrucey/node-rcswitch4)
 
 # Installation
 
 1. Install [WiringPi](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/)
 1. Install homebridge: `npm install -g homebridge`
 1. Install homebridge-rcswitch-gpiomem: `npm install --global
-   homebridge-rcswitch-gpiomem3`
+   homebridge-rcswitch4`
 1. Update your configuration file.
 
 # Configuration
@@ -49,7 +49,7 @@ It seems that the `gpiomem` system I use and the SysFS method of interacting wit
 
 ## 20180127 :: 1.3.0
 
-- Moved to new rcswitch dependancy `rcswitch-gpiomem3`. Now supporting node v10.x.x
+- Moved to new rcswitch dependancy `rcswitch4`. Now supporting node v10.x.x
 
 ## 20171003 :: 1.1.5
 

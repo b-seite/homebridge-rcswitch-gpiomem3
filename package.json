@@ -1,10 +1,10 @@
 {
-  "name": "homebridge-rcswitch-gpiomem3",
-  "version": "1.3.1",
+  "name": "homebridge-rcswitch4",
+  "version": "1.4.0",
   "description": "Siri / HomeKit control of RF switches by way of homebridge.",
   "repository": {
       "type": "git",
-      "url": "https://github.com/b-seite/homebridge-rcswitch-gpiomem3.git"
+      "url": "https://github.com/b-seite/homebridge-rcswitch4.git"
   },
   "license": "MIT",
   "keywords": [
@@ -28,10 +28,10 @@
     "homebridge": ">=0.4.40"
   },
   "bugs": {
-      "url": "https://github.com/b-seite/homebridge-rcswitch-gpiomem3/issues"
+      "url": "https://github.com/b-seite/homebridge-rcswitch4/issues"
   },
-  "homepage": "https://github.com/b-seite/homebridge-rcswitch-gpiomem3",
+  "homepage": "https://github.com/b-seite/homebridge-rcswitch4",
   "dependencies": {
-     "rcswitch-gpiomem3": "git://github.com/b-seite/node-rcswitch-gpiomem3#master"
+     "rcswitch4": "git://github.com/b-seite/node-rcswitch4#master"
   }
 }
