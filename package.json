@@ -1,6 +1,6 @@
 {
   "name": "homebridge-rcswitch4",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Siri / HomeKit control of RF switches by way of homebridge.",
   "repository": {
       "type": "git",
@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/b-seite/homebridge-rcswitch4",
   "dependencies": {
-     "rcswitch4": "git://github.com/b-seite/node-rcswitch4#master"
+     "rcswitch4": ">=0.4.0"
   }
 }
