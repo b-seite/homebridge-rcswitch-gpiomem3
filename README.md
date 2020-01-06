@@ -47,9 +47,13 @@ It seems that the `gpiomem` system I use and the SysFS method of interacting wit
 
 # Changelog
 
+## 20200106 :: 1.4.0
+
+- Moved to new rcswitch dependancy `rcswitch4`. Now supporting node v12.x.x
+
 ## 20180127 :: 1.3.0
 
-- Moved to new rcswitch dependancy `rcswitch4`. Now supporting node v10.x.x
+- Moved to new rcswitch dependancy `rcswitch-gpiomem3`. Now supporting node v10.x.x
 
 ## 20171003 :: 1.1.5
 
