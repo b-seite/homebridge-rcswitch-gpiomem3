@@ -3,7 +3,7 @@
 [![NPM version](https://badge.fury.io/js/homebridge-rcswitch4.svg)](http://badge.fury.io/js/homebridge-rcswitch4)
 
 Control RF outlets with HomeKit / Siri using
-[rcswitch4](https://github.com/jdrucey/node-rcswitch4)
+[rcswitch4](https://github.com/b-seite/node-rcswitch4)
 
 # Installation
 
@@ -50,6 +50,7 @@ It seems that the `gpiomem` system I use and the SysFS method of interacting wit
 ## 20200106 :: 1.4.0
 
 - Moved to new rcswitch dependancy `rcswitch4`. Now supporting node v12.x.x
+- Added support for [Hoobs](https://hoobs.org) configuration.  
 
 ## 20180127 :: 1.3.0
 
