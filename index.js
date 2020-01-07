@@ -43,7 +43,7 @@ function RadioSwitch(log, config) {
     informationService
         .setCharacteristic(Characteristic.Name, "node-rcswitch4")
         .setCharacteristic(Characteristic.Manufacturer, "jdrucey")
-        .setCharacteristic(Characteristic.Model, "v1.4.0")
+        .setCharacteristic(Characteristic.Model, "v1.4.2")
         .setCharacteristic(Characteristic.SerialNumber, "0000000001");
 
     var state = false;

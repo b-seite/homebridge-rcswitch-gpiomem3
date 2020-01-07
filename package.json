@@ -1,12 +1,54 @@
 {
-  "name": "homebridge-rcswitch4",
-  "version": "1.4.1",
-  "description": "Siri / HomeKit control of RF switches by way of homebridge.",
-  "repository": {
-      "type": "git",
-      "url": "https://github.com/b-seite/homebridge-rcswitch4.git"
+  "_from": "homebridge-rcswitch4",
+  "_id": "homebridge-rcswitch4@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-YbNj+CHvInLZ5aa8AVMpyuF4d/DEDgaO9zAKo8RC3ei1cAVdiv6ls6U+Ojoqy8mjg8Yy2Q+wnYE4mtZleTJsZQ==",
+  "_location": "/homebridge-rcswitch4",
+  "_phantomChildren": {
+    "bindings": "1.5.0",
+    "nan": "2.14.0"
   },
-  "license": "MIT",
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "homebridge-rcswitch4",
+    "name": "homebridge-rcswitch4",
+    "escapedName": "homebridge-rcswitch4",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/homebridge-rcswitch4/-/homebridge-rcswitch4-1.4.0.tgz",
+  "_shasum": "5ffa809aedd97552abf93488cea82397c606b53d",
+  "_spec": "homebridge-rcswitch4",
+  "_where": "/home/hoobs/.hoobs",
+  "author": {
+    "name": "Jamie Druce"
+  },
+  "bugs": {
+    "url": "https://github.com/b-seite/homebridge-rcswitch4/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Nathan Henrie",
+      "email": "http://n8henrie.com"
+    }
+  ],
+  "dependencies": {
+    "rcswitch4": ">=0.4.0"
+  },
+  "deprecated": false,
+  "description": "Siri / HomeKit control of RF switches by way of homebridge.",
+  "engines": {
+    "homebridge": ">=0.4.40",
+    "node": ">=4.0"
+  },
+  "homepage": "https://github.com/b-seite/homebridge-rcswitch4",
   "keywords": [
     "rcswitch",
     "raspberry",
@@ -21,17 +63,11 @@
     "homebridge-plugin",
     "category-lighting"
   ],
-  "author": "Jamie Druce",
-  "contributors": ["Nathan Henrie <http://n8henrie.com>"],
-  "engines": {
-    "node": ">=4.0",
-    "homebridge": ">=0.4.40"
+  "license": "MIT",
+  "name": "homebridge-rcswitch4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-seite/homebridge-rcswitch4.git"
   },
-  "bugs": {
-      "url": "https://github.com/b-seite/homebridge-rcswitch4/issues"
-  },
-  "homepage": "https://github.com/b-seite/homebridge-rcswitch4",
-  "dependencies": {
-     "rcswitch4": ">=0.4.0"
-  }
+  "version": "1.4.2"
 }
