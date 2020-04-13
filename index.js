@@ -48,8 +48,15 @@ function RadioSwitch(log, config) {
     informationService
         .setCharacteristic(Characteristic.Name, "node-rcswitch4")
         .setCharacteristic(Characteristic.Manufacturer, "jdrucey")
-        .setCharacteristic(Characteristic.Model, "v1.4.2")
-        .setCharacteristic(Characteristic.SerialNumber, "0000000001");
+        .setCharacteristic(Characteristic.Model, "v1.4.2");
+
+    if ((config.systemcode != undefined) && (config.unitcode != undefined)) {
+        informationService
+            .setCharacteristic(Characteristic.SerialNumber, config.systemcode + "|" + config.unitcode);
+    } else {
+        informationService
+            .setCharacteristic(Characteristic.SerialNumber, config.onCode + "|" + config.offCode);
+    }
 
     var state = false;
     var switchService = new Service.Switch(config.name);
