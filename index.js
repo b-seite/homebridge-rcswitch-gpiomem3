@@ -14,6 +14,11 @@ function RadioSwitch(log, config) {
         return log("Name missing from configuration.");
     }
 
+    rcswitch.enableTransmit(config.pin === undefined ? 17 : config.pin);
+    rcswitch.setProtocol(config.protocol || 1);
+    rcswitch.setPulseLength(config.pulseLength || 190);
+    rcswitch.setRepeatTransmit(config.repeats || 10);
+
     if ((config.onCode !== undefined) && (config.offCode !== undefined)) {
         if (typeof(config.onCode) === "string") {
             // If code is a string, it should be binary and don't need bit length
@@ -43,8 +48,15 @@ function RadioSwitch(log, config) {
     informationService
         .setCharacteristic(Characteristic.Name, "node-rcswitch4")
         .setCharacteristic(Characteristic.Manufacturer, "jdrucey")
-        .setCharacteristic(Characteristic.Model, "v1.4.2")
-        .setCharacteristic(Characteristic.SerialNumber, "0000000001");
+        .setCharacteristic(Characteristic.Model, "v1.4.2");
+
+    if ((config.systemcode != undefined) && (config.unitcode != undefined)) {
+        informationService
+            .setCharacteristic(Characteristic.SerialNumber, config.systemcode + "|" + config.unitcode);
+    } else {
+        informationService
+            .setCharacteristic(Characteristic.SerialNumber, config.onCode + "|" + config.offCode);
+    }
 
     var state = false;
     var switchService = new Service.Switch(config.name);
@@ -53,10 +65,6 @@ function RadioSwitch(log, config) {
         .getCharacteristic(Characteristic.On)
         .on('set', function(value, callback) {
             state = value;
-    		rcswitch.enableTransmit(config.pin || 17);
-            rcswitch.setProtocol(config.protocol || 1);
-            rcswitch.setPulseLength(config.pulseLength || 190);
-            rcswitch.setRepeatTransmit(config.repeats || 10);
             if (state) {
 	            if ((config.systemcode != undefined) && (config.unitcode != undefined)) {
                 	log("Switching on " + config.systemcode + "." + config.unitcode + " (" + config.name + ") at protocol " + config.protocol);
